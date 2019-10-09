@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  user: siecleapi
+  password: siecleapi
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: siecleapi_dev
+
+test:
+  <<: *default
+  database: siecleapi_test
+
+production:
+  <<: *default
+  database: siecleapi_production
