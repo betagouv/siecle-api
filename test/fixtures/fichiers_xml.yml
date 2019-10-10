@@ -1,0 +1,10 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+nomenclature_uaj:
+  contenu: |
+    <?xml version="1.0" encoding="ISO-8859-15"?>
+    <BEE_NOMENCLATURES VERSION="3.1">
+    <PARAMETRES>
+    <UAJ>0123456S</UAJ>
+    </PARAMETRES>
+    </BEE_NOMENCLATURES>

@@ -1,0 +1,8 @@
+# Commandes utiles
+
+git config commit.template .gitmessage
+
+## Corriger une migration avant commit
+
+- git co db/schema.rb # pour annuler les modifications en base du point de vue activerecord
+- rails db:drop db:setup || rails db:migrate

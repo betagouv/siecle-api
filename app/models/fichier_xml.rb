@@ -1,0 +1,2 @@
+class FichierXml < ApplicationRecord
+end
