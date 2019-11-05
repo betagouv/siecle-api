@@ -1,4 +1,5 @@
 class FichiersXmlController < ApplicationController
+
   # POST /fichiers_xml
   def create
     contenu = File.read(params[:fichier], :encoding => 'iso-8859-15')

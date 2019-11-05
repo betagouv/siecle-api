@@ -3,13 +3,8 @@
 Nous allons essayer d'avoir une API auto documentée comme sur https://api.github.com (est-ce que c'est du [HATEOAS](https://fr.wikipedia.org/wiki/HATEOAS)) ?
 
 ## Remplissage des données de l'API
-_post /fichiers_xml params : {un fichier XML extrait de siecle}_
 
-- [DONE] appeler la requête post pour envoyer le fichier
-- [DONE] le controller va lire le contenu pour l'enregistrer, puis poster un background job
-- [DONE] le background job va 
-    - prendre le contenu et le donner à la gem `siecle-xml_mapper`
-    - persister les objets renvoyer par la gem
+_post /fichiers_xml params : {un fichier XML extrait de siecle}_
 
 ## Service des données via l'API
 
