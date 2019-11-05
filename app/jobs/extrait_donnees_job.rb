@@ -4,8 +4,8 @@ class ExtraitDonneesJob < ActiveJob::Base
 
   def perform(fichier_xml_id)
     contenu = FichierXml.find(fichier_xml_id).contenu
-    etablissement = Siecle::XmlMapper.lit(contenu)
-    Etablissement.create!(uai: etablissement.uai)
+    document_xml = Nokogiri::XML(contenu)
+    Etablissement.create!(uai: document_xml.xpath("//UAJ").text)
   end
 
 end

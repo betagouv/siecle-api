@@ -10,5 +10,6 @@ class ExtraitDonneesJobTest < ActionDispatch::IntegrationTest
       refute_nil Etablissement.find_by(uai: '0123456S')
     end
   end
+
 end
 
