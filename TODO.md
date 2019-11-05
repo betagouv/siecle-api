@@ -8,15 +8,11 @@ _post /fichiers_xml params : {un fichier XML extrait de siecle}_
 
 ## Service des données via l'API
 
-- ?
+- get /etablissements : renvoie la liste des établissements
+- get / : renvoie la liste des urls possibles (dont get /etablissement)
+- get /etablissement/{uai} : renvoie les informations d'un établissement
 
+## Technique
 
-# TODO Gem
-
-- parser le XML
-- extraire le type à partir de la balise 
-- mettre à jour l'objet FichierXML
-- donner le contenu à la gem qui va extraire des objets (dans un premier temps)
-- instancier un analyseur qui analyse ce fichier et lui passer le document xml pour analyse
-
-
+- déployer dans un Tomcat
+- faire un client en Java
