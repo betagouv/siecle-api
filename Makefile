@@ -1,3 +1,3 @@
 test:
-	rake test
+	bundle exec rake test
 .PHONY: test

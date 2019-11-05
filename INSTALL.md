@@ -13,3 +13,4 @@ Install Ubuntu
   - sudo su - postgres
   - psql
   - `postgres=# create role siecleapi with createdb login password 'siecleapi';`
+- `bundle exec rake db:setup`
